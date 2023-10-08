@@ -48,3 +48,13 @@
 .hover-underline:hover {
     text-decoration: underline 3px !important;
 }
+
+.bg-img {
+    /* make the image unzoom to take the whole space */
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-subtle {
+    background-color: #dee2e6a8;
+}
