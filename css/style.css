@@ -35,7 +35,7 @@
     align-content: flex-end;
 }
 
-section {
+.spaced {
     padding: 50px 0;
 }
 
