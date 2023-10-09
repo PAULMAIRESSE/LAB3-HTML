@@ -11,23 +11,32 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 
+<!-- activate scroll in navbar -->
+
 <body data-bs-spy="scroll" data-bs-target="#main-navbar">
+    <!-- Header section + Carrousel -->
     <section id="header">
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="main-navbar">
+            <!-- container that expend -->
             <div class="container-fluid">
+                <!-- Logo + brand -->
                 <a class="navbar-brand" href="#">
                     <img src="./assets/images/logo.png" alt="Logo" width="30" height="24"
                         class="d-inline-block align-text-top">
                     Toronto Island
                 </a>
+                <!-- button to collapse the navbar in responsive mode -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- navbar links -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-1">
                         <li class="nav-item">
+                            <!-- active style is change with css -->
                             <a class="nav-link active" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
@@ -53,19 +62,23 @@
             </div>
         </nav>
 
+        <!-- Carrousel -->
         <div id="home">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div id="carrousel-home" class="carousel slide" data-bs-ride="true">
+                <!--indicators bellow carrousel of the displayed image -->
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#carrousel-home" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carrousel-home" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    <button type="button" data-bs-target="#carrousel-home" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    <button type="button" data-bs-target="#carrousel-home" data-bs-slide-to="3"
                         aria-label="Slide 4"></button>
                 </div>
+                <!-- images -->
                 <div class="carousel-inner" style=" width:100%; height: 500px !important;">
+                    <!-- active class to the displayed image -->
                     <div class="carousel-item active">
                         <img src="./assets/images/image1.jpg" class="d-block w-100 align-self-center"
                             alt="Image of Centerville">
@@ -81,12 +94,13 @@
                             alt="Image of the restaurant of the Island">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                <!-- controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrousel-home"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-next" type="button" data-bs-target="#carrousel-home"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
@@ -95,46 +109,62 @@
         </div>
     </section>
 
+    <!-- Main section -->
     <section id="main">
+        <!-- Call to action -->
         <section id="about" class="overflow-hidden spaced">
             <div class="container">
+                <!-- divide the page in two part -->
                 <div class="row justify-content-between align-items-center">
                     <div class="col-lg-5">
                         <div class="row mb-6">
                             <div class="col">
+                                <!-- title -->
                                 <h2>
                                     <span class="text-primary">About</span> Toronto Island
                                 </h2>
+                                <!-- legend -->
                                 <p class="lead">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
                                     Reprehenderit dolor ut excepteur est consequat nisi veniam aliqua amet enim commodo.
                                 </p>
-                                <a type="button" class="btn btn-primary btn-lg" href="#scrollspyHeading4">
+                                <!-- button call to action -->
+                                <a class="btn btn-primary btn-lg" href="#scrollspyHeading4">
                                     Book Now
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
+                        <!-- image cover -->
                         <img class="img-fluid shadow-lg level-1" src="./assets/images/image1.jpg" alt="Image">
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Card display -->
         <section id="places" class="overflow-hidden border-top spaced">
             <div class="container">
+                <!-- divide the page in 3 parts -->
                 <div class="row justify-content-between align-items-center">
                     <div class="row gap-3">
                         <div class="col-md">
+                            <!-- card extended such that all card are the same size -->
                             <div class="card h-100 shadow overflow-hidden rounded-3">
+                                <!-- image cover -->
                                 <div class="bg-img" style="background-image: url(./assets/images/image3.jpg)">
+                                    <!-- background color with alpha to see the image -->
                                     <div class="bg-subtle text-center p-3">
+                                        <!-- Icon -->
                                         <i class="bi bi-binoculars-fill fs-1"></i>
                                     </div>
                                 </div>
+                                <!-- card body -->
                                 <div class="card-body  d-flex flex-column">
+                                    <!-- title -->
                                     <h5 class="card-title">The view of the city</h5>
+                                    <!-- text -->
                                     <p class="card-text">Elit duis deserunt sit aliquip qui ad consectetur nisi duis
                                         veniam
                                         cillum incididunt minim veniam nostrud. Nisi consectetur deserunt eiusmod
@@ -195,13 +225,19 @@
             </div>
         </section>
 
+        <!-- gallery of images with text description -->
         <section id="gallery" class="overflow-hidden spaced">
             <div class="container">
+                <!-- divide the page in two part (smaller part for the image) -->
+                <!-- pass on row display when on smaller screen -->
                 <div class="row justify-content-between align-items-center">
                     <div class="col-lg-6 mb-4">
+                        <!-- title -->
                         <h2>
+                            <!-- Accentuate important part -->
                             <span class="text-bg-info hover-underline">About</span> Toronto Island
                         </h2>
+                        <!-- text -->
                         <p>
                             Eu sunt eu officia. Cillum aliqua do occaecat reprehenderit commodo elit amet ipsum non
                             consequat. Non ipsum et nisi sit esse consequat incididunt. Non cillum non elit officia nisi
@@ -213,6 +249,7 @@
                         </p>
                     </div>
                     <div class="col-lg-5 mb-4">
+                        <!-- make the image take the whole place -->
                         <img class="img-fluid shadow-lg level-1 rounded-3 mb-3" src="./assets/images/image1.jpg"
                             alt="Image">
                     </div>
